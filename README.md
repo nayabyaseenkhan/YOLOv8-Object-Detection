@@ -1,42 +1,44 @@
 # 🎯 Real-Time Object Detection using YOLOv8
 
-A deep learning-based object detection application built using **YOLOv8**, **PyTorch**, **OpenCV**, and **Streamlit**. The application allows users to upload images, detect multiple objects in real time, and visualize results with bounding boxes, confidence scores, charts, and downloadable detection reports.
+A deep learning-based real-time object detection web application built using **YOLOv8**, **PyTorch**, **OpenCV**, and **Streamlit**. The application detects multiple objects in uploaded images, displays bounding boxes with confidence scores, and provides interactive visualizations through a modern dashboard.
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates the implementation of a real-time object detection system using the pre-trained YOLOv8 model. Users can upload an image through a Streamlit web interface, and the application detects objects, displays annotated results, confidence scores, and interactive visualizations.
+This project demonstrates the implementation of a real-time object detection system using the pre-trained **YOLOv8 Nano** model from Ultralytics. Users can upload an image through a Streamlit web interface, and the application detects multiple objects, displays annotated results, confidence scores, detection statistics, and interactive charts.
 
 ---
 
 ## ✨ Features
 
-- 📤 Upload images (JPG, JPEG, PNG)
-- 🎯 Real-time object detection using YOLOv8
-- 🖼️ Display original and detected images
-- 📊 Detection summary dashboard
-- 📋 Detection table with confidence scores
-- 📈 Confidence progress bars
-- 🥧 Object distribution pie chart
-- 📊 Object count bar chart
-- 📄 Detection report
-- 📥 Download annotated image
-- 💡 Detection insights and tips
-- 🎨 Professional Streamlit user interface
+- 📤 Upload Images (JPG, JPEG, PNG)
+- 🎯 Real-Time Object Detection
+- 🖼️ Original vs Detected Image Comparison
+- 📊 Detection Summary Dashboard
+- 📋 Object Detection Table
+- 📈 Confidence Score Visualization
+- 🥧 Object Distribution Pie Chart
+- 📊 Object Count Bar Chart
+- 📄 Detection Report
+- 📥 Download Annotated Detection Image
+- 💡 Detection Insights & Tips
+- 🎨 Modern Streamlit User Interface
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- YOLOv8 (Ultralytics)
-- PyTorch
-- OpenCV
-- Streamlit
-- Pandas
-- Plotly
-- Pillow
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming Language |
+| YOLOv8 | Object Detection Model |
+| PyTorch | Deep Learning Framework |
+| OpenCV | Image Processing |
+| Streamlit | Web Application |
+| Pandas | Data Processing |
+| Plotly | Interactive Charts |
+| Pillow | Image Handling |
 
 ---
 
@@ -46,6 +48,8 @@ This project demonstrates the implementation of a real-time object detection sys
 YOLOv8-Object-Detection/
 │
 ├── images/
+│   └── sample.jpg
+│
 ├── models/
 │   └── yolov8n.pt
 │
@@ -54,55 +58,56 @@ YOLOv8-Object-Detection/
 │
 ├── screenshots/
 │   ├── home.png
-│   ├── upload.png
-│   ├── detection.png
-│   └── charts.png
+│   ├── report.png
+│   ├── result.png
+│   └── summary.png
 │
 ├── app.py
 ├── detect.py
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
-└── .gitignore
+├── .gitignore
+└── .gitattributes
 ```
 
 ---
 
-## ⚙️ Installation
+## 🚀 Installation
 
-### Clone the repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/YOLOv8-Object-Detection.git
+git clone https://github.com/nayabyaseenkhan/YOLOv8-Object-Detection.git
 ```
 
-### Navigate to the project
+### Navigate to the Project
 
 ```bash
 cd YOLOv8-Object-Detection
 ```
 
-### Create a virtual environment
+### Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### Activate the virtual environment
+### Activate Virtual Environment
 
-#### Windows
+**Windows**
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\activate
 ```
 
-#### macOS/Linux
+**Linux / macOS**
 
 ```bash
 source .venv/bin/activate
 ```
 
-### Install dependencies
+### Install Required Libraries
 
 ```bash
 pip install -r requirements.txt
@@ -116,16 +121,16 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The application will open in your default web browser.
+The application will automatically open in your default browser.
 
 ---
 
-## 🚀 Project Workflow
+## 🔄 Project Workflow
 
 1. Upload an image.
 2. Click **Detect Objects**.
-3. YOLOv8 performs object detection.
-4. Bounding boxes and labels are displayed.
+3. YOLOv8 processes the image.
+4. Objects are detected with bounding boxes.
 5. Confidence scores are calculated.
 6. Detection statistics are generated.
 7. Charts visualize detected objects.
@@ -133,70 +138,62 @@ The application will open in your default web browser.
 
 ---
 
-## 📊 Model Used
+## 🤖 Model Information
 
-**YOLOv8 Nano (YOLOv8n)**
+**Model:** YOLOv8 Nano (`yolov8n.pt`)
 
-YOLOv8 is one of the fastest and most accurate real-time object detection models developed by Ultralytics. The Nano version provides fast inference while maintaining good accuracy, making it suitable for lightweight applications.
+YOLOv8 is a state-of-the-art object detection model developed by **Ultralytics**. It performs real-time detection with high speed and accuracy while remaining lightweight enough for practical applications.
 
 ---
 
-## 📸 Screenshots
+## 📸 Application Screenshots
 
 ### 🏠 Home Page
 
-```
-Add screenshot: screenshots/home.png
-```
+![Home](screenshots/home.png)
 
-### 📤 Upload Image
+---
 
-```
-Add screenshot: screenshots/upload.png
-```
+### 📄 Detection Report
+
+![Report](screenshots/report.png)
+
+---
 
 ### 🎯 Detection Result
 
-```
-Add screenshot: screenshots/detection.png
-```
-
-### 📊 Dashboard
-
-```
-Add screenshot: screenshots/charts.png
-```
+![Result](screenshots/result.png)
 
 ---
 
-## 💼 Applications
+### 📊 Detection Summary
 
-- Autonomous Vehicles
-- Smart Surveillance
-- Retail Analytics
-- Traffic Monitoring
-- Inventory Management
-- Industrial Automation
-- Robotics
-- Smart Cities
+![Summary](screenshots/summary.png)
 
 ---
 
-## 🔮 Future Improvements
+## 💼 Real-World Applications
 
-- Webcam object detection
-- Video object detection
-- Confidence threshold adjustment
-- Model selection (YOLOv8n, YOLOv8s, YOLOv8m)
-- Export detection report as CSV
-- Cloud deployment
-- Mobile-friendly interface
+- 🚗 Autonomous Vehicles
+- 🎥 Smart Surveillance
+- 🤖 Robotics
+- 🏭 Industrial Automation
+- 🚦 Traffic Monitoring
+- 🛒 Retail Analytics
+- 📦 Inventory Management
+- 🏙️ Smart City Solutions
 
 ---
 
-## 📄 License
+## 📈 Future Enhancements
 
-This project is licensed under the MIT License.
+- 📷 Webcam Object Detection
+- 🎥 Video Object Detection
+- 🎯 Adjustable Confidence Threshold
+- 🧠 Multiple YOLO Model Selection
+- 📄 Export Detection Results as CSV
+- ☁️ Cloud Deployment
+- 📱 Mobile Responsive Interface
 
 ---
 
@@ -206,12 +203,17 @@ This project is licensed under the MIT License.
 
 Artificial Intelligence & Data Science Graduate
 
-GitHub: https://github.com/nayabyaseenkhan
+GitHub:
+https://github.com/nayabyaseenkhan
 
-LinkedIn: https://linkedin.com/in/yaseenkhann
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
