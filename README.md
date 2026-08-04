@@ -54,7 +54,7 @@ YOLOv8-Object-Detection/
 │   └── yolov8n.pt
 │
 ├── notebooks/
-│   └── YOLO_EDA.ipynb
+│   └── YOLOv8-Object-Detection.ipynb
 │
 ├── screenshots/
 │   ├── home.png
