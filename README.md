@@ -4,6 +4,12 @@ A deep learning-based real-time object detection web application built using **Y
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Try the application here**
+
+https://yolov8-object-detection-dl.streamlit.app
+
 ## 📌 Project Overview
 
 This project demonstrates the implementation of a real-time object detection system using the pre-trained **YOLOv8 Nano** model from Ultralytics. Users can upload an image through a Streamlit web interface, and the application detects multiple objects, displays annotated results, confidence scores, detection statistics, and interactive charts.
